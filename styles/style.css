@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/wolf-forest.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  margin: 1%;
+  margin-left: 24%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  width: 100%;
+  gap: 10px;
+}
+
+input {
+  padding: 1%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.buttons button {
+  padding: 1%;
+  width: 25%;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
+
+.header {
+  border: solid 1px black;
+  padding: 3%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  opacity: 80%;
+}
+
+.header button {
+  background-color: yellow;
+  padding: 1%;
+}
+
+.header button:hover {
+  cursor: pointer;
+}
+
+.account {
+  background-color: white;
+  width: 20%;
+  padding: 0.3%;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
