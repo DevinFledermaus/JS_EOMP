@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  border: solid 1px black;
+  padding: 3%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  opacity: 80%;
+}
+
+i {
+  font-size: 200%;
+  color: black;
+}
+
+button:hover {
+   {
+  }
+  .fas fa-shopping-cart {
+    color: white;
+  }
+}
+
+.header button {
+  background-color: yellow;
+  padding: 0.5%;
+}
+
+.header button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  color: blue;
+  margin: auto;
+}

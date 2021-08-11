@@ -53,26 +53,6 @@ input {
   cursor: pointer;
 }
 
-.header {
-  border: solid 1px black;
-  padding: 3%;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 50px;
-  opacity: 80%;
-}
-
-.header button {
-  background-color: yellow;
-  padding: 1%;
-}
-
-.header button:hover {
-  cursor: pointer;
-}
-
 .account {
   background-color: white;
   width: 20%;
