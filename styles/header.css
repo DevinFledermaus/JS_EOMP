@@ -20,14 +20,6 @@ i {
   color: black;
 }
 
-button:hover {
-   {
-  }
-  .fas fa-shopping-cart {
-    color: white;
-  }
-}
-
 .header button {
   background-color: yellow;
   padding: 0.5%;
