@@ -35,3 +35,18 @@ img {
   max-width: 100px;
   max-height: 100px;
 }
+
+h2 {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  color: rgba(10, 10, 10, 0.712);
+}
+
+h4 {
+  margin-left: 15px;
+}
