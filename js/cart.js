@@ -37,7 +37,7 @@ function createCard(card) {
             <h2>${card.title}</h2>
             <p>${card.description}</p>
             <h4>${card.price}</h4>
-            </div>     
+            </div>
           </div>
         `;
   return createdCard;
