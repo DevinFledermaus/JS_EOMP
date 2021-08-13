@@ -5,6 +5,7 @@
 }
 
 body {
+  height: 100vh;
   background-image: url(../images/wolf-forest.jpg);
   background-position: center;
   background-size: cover;
@@ -75,4 +76,30 @@ button > a {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+}
+
+#login_form {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.btn button {
+  padding: 0.2%;
+  width: 200px;
+  height: 50px;
+  font-size: 150%;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: blue;
+  border: black;
+}
+
+.btn button:hover {
+  cursor: pointer;
 }
