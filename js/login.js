@@ -1,9 +1,9 @@
-let signInButton = document.querySelector(".login-section");
+let signInButton = document.querySelector("#login_form");
 
 function login(username, password) {
   console.log(username);
   console.log(password);
-  fetch("http://127.0.0.1:5000/auth", {
+  fetch("https://frozen-ocean-71631.herokuapp.com/auth", {
     method: "POST",
     body: JSON.stringify({
       username: `${username}`,
@@ -21,10 +21,17 @@ function login(username, password) {
         myStorage.setItem("jwt-token", data["access_token"]);
         myStorage.setItem("username", username);
         myStorage.setItem("password", password);
-        window.location.href = "/product.html";
+        window.location.href = "./products.html";
       }
     });
 }
+
+document.querySelector("#login_form").addEventListener("submit", (e) => {
+  let username = document.querySelector("#username").value;
+  let password = document.querySelector("#password").value;
+  e.preventDefault();
+  login(username, password);
+});
 
 function activate() {
   let hidden = document.querySelectorAll(".form");
