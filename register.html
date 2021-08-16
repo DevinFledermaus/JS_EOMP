@@ -12,46 +12,59 @@
     <div class="header">
       <h1>Koumori's General Store</h1>
     </div>
-    <div class="form">
-      <div class="heading">
-        <h2>Register</h2>
-      </div>
-      <div class="inputs">
-        <input
-          type="text"
-          id="first-name"
-          name="First Name"
-          placeholder="First Name"
-          required
-        />
-        <input
-          type="text"
-          id="last-name"
-          name="Last Name"
-          placeholder="Last Name"
-          required
-        />
-        <input
-          type="text"
-          id="username"
-          name="Username"
-          placeholder="Username"
-          required
-        />
-        <input
-          type="text"
-          id="password"
-          name="Password"
-          placeholder="Password"
-          required
-        />
-      </div>
-      <div class="buttons">
-        <button><a href="products.html">Register</a></button>
-      </div>
+    <form class="form" id="register_form" method="POST">
+      <!-- <div class="heading"> -->
+      <h2 class="heading">Register</h2>
+      <!-- </div> -->
+      <!-- <div class="inputs"> -->
+      <input
+        type="text"
+        id="first-name"
+        name="first_name"
+        class="inputs"
+        placeholder="First Name"
+        required
+      />
+      <input
+        type="text"
+        id="last-name"
+        name="last_name"
+        class="inputs"
+        placeholder="Last Name"
+        required
+      />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="inputs"
+        placeholder="Username"
+        required
+      />
+      <input
+        type="text"
+        id="password"
+        name="password"
+        class="inputs"
+        placeholder="Password"
+        required
+      />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="inputs"
+        placeholder="Email Address"
+        required
+      />
+      <!-- </div> -->
+      <!-- <div class="buttons"> -->
+      <button type="submit" class="buttons">Register</button>
+      <!-- </div> -->
       <div class="account">
         <a href="index.html">Already Registered?</a>
       </div>
-    </div>
+    </form>
+    <script src="./js/register.js"></script>
   </body>
 </html>
