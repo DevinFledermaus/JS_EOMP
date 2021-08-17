@@ -175,6 +175,21 @@ function populateEdit(index) {
   <button onclick="showEdit(-1)" class="btn-edit">close</button>`;
 }
 
+// Add to Cart Function
+
+function addToCart(index) {
+  cart.push(index);
+  //   console.log(cart);
+  let add_btn = document.querySelector(`.btn-Add-${index}`);
+  //   console.log(add_btn);
+  add_btn.style.display = "none";
+  populateCart();
+}
+
+function showCart() {
+  document.querySelector(".cart").classList.toggle("active");
+}
+
 // Edit function
 
 function editProduct(id) {
@@ -287,6 +302,7 @@ function createCards() {
          <h2> ${product[1]}</h2>
          <p>${product[2]}</p>
          <h4>${product[3]}</h4>
+         <button onclick="addToCart(${product[0]})" class="btn-Add btn-Add-${product[0]}">Add to cart</button>
          <button onclick="showEdit(${index})" class="btn-edit">Edit</button>
          <button onclick="deleteProduct(${product[0]})" class="btn-delete">Delete</button>
      </div>`;

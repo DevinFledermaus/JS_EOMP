@@ -15,8 +15,8 @@
   <body>
     <div class="header">
       <h1>Koumori's General Store</h1>
-      <button>
-        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <button class="cart-btn" onclick="showCart()">
+        <i class="fas fa-shopping-cart"></i>
       </button>
       <button>
         <a href="index.html"><i class="fas fa-home"></i></a>
@@ -25,11 +25,8 @@
     <div class="container">
       <div class="cards"></div>
     </div>
-    <!-- <div class="buttons">
-      <button>ADD</button>
-      <button>UPDATE</button>
-      <button>REMOVE</button>
-    </div> -->
+    <div class="cart"></div>
     <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

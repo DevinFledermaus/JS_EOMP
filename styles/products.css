@@ -64,3 +64,26 @@ h2 {
 p {
   margin-bottom: 3%;
 }
+
+.cart-btn {
+  z-index: 1000;
+}
+
+.cart {
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  z-index: 0;
+  transition: all 0.3s linear;
+}
+
+.cart.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 100;
+  background-image: url(../images/arch.jpg);
+  background-size: cover;
+}
