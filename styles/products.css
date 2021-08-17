@@ -42,7 +42,7 @@ body {
 }
 
 img {
-  max-width: 200px;
+  max-width: 300px;
   max-height: 200px;
   margin-bottom: 3%;
 }
@@ -57,12 +57,26 @@ img {
   gap: 20px;
 }
 
-h2 {
-  margin-bottom: 5%;
+#btns {
+  margin: 3%;
+  bottom: 100%;
 }
 
-p {
+h2 {
+  margin-bottom: 5%;
+  text-transform: capitalize;
+}
+
+.card > p {
   margin-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 80%;
+  font-style: italic;
+}
+
+h4 {
+  margin-bottom: 5%;
 }
 
 .cart-btn {
@@ -86,4 +100,24 @@ p {
   z-index: 100;
   background-image: url(../images/arch.jpg);
   background-size: cover;
+}
+
+.cart-item {
+  padding: 3%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+}
+
+.total-div > p {
+  margin-top: 5%;
+  font-size: 200%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 3%;
 }
