@@ -75,21 +75,23 @@ function showEdit(index) {
   } else {
     let edit_container = document.querySelector(".section-edit");
     edit_container.style.display = "flex";
-    fetch("http://127.0.0.1:5000/get-products/").then((request) => {
-      request.json().then((obj) => {
-        // console.log(obj);
-        data = obj.data;
-        // console.log(data[index]);
-        product = data[index];
-        populateEdit(data[index][0]);
-        let old_container = document.querySelector(".old-info");
-        old_container.innerHTML = `<div class="item">
+    fetch("https://frozen-ocean-71631.herokuapp.com/get-cart/").then(
+      (request) => {
+        request.json().then((obj) => {
+          // console.log(obj);
+          data = obj.data;
+          // console.log(data[index]);
+          product = data[index];
+          populateEdit(data[index][0]);
+          let old_container = document.querySelector(".old-info");
+          old_container.innerHTML = `<div class="item">
            <p class="product-name">Name: ${product[1]}</p>
-           <p class="product-price">Price: ${product[2]}</p>
-           <p class="product-date">Date: ${product[3]}</p> 
+           <p class="product-price">Price: ${product[3]}</p>
+           <p class="product-des">Description: ${product[2]}</p> 
        </div>`;
-      });
-    });
+        });
+      }
+    );
   }
 }
 
